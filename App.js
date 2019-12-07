@@ -6,7 +6,7 @@ import {
   Text,
 } from 'react-native';
 
-import LifeCycle from './study/Lifecycle';
+import LifeCycle from './study/1.Lifecycle';
 
 const App = () => {
   return (
