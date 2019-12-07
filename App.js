@@ -6,12 +6,12 @@ import {
   Text,
 } from 'react-native';
 
+import LifeCycle from './study/Lifecycle';
+
 const App = () => {
   return (
     <View style={styles.app}>
-      <Text>
-        Hello world
-      </Text>
+      <LifeCycle />
     </View>
   );
 };
