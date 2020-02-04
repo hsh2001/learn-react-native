@@ -2,8 +2,8 @@
 # You have to install 'Android studio' first.
 #   https://developer.android.com/studio/index.html
 
-
-sudo echo "Need sudo";
+echo "Need sudo";
+sudo echo "sudo confirmed!";
 
 # install node & watchman
 brew install node;
@@ -11,7 +11,6 @@ brew install watchman;
 
 # install RN global modules
 sudo npm i -g react-native;
-sudo npm i -g react-native-cli;
 
 # setting Android
 brew tap AdoptOpenJDK/openjdk;
