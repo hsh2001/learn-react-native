@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  View,
-  Text,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, View, Text} from 'react-native';
 
 import LifeCycle from './study/1.Lifecycle';
 

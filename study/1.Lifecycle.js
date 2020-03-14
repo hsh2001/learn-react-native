@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  Alert,
-} from 'react-native';
+import {View, Text, Alert} from 'react-native';
 
 class LifeCycle extends Component {
   constructor() {
@@ -22,10 +18,7 @@ class LifeCycle extends Component {
   }
 
   render() {
-    const component =
-      this.state.timeout
-        ? <View />
-        : <TestWillUnmount />;
+    const component = this.state.timeout ? <View /> : <TestWillUnmount />;
     return (
       <View>
         <TestDidMount />
@@ -39,7 +32,7 @@ class TestDidMount extends Component {
   constructor(props) {
     super();
     this.state = {
-      text: "not mounted.",
+      text: 'not mounted.',
     };
   }
 
@@ -63,15 +56,14 @@ class TestDidMount extends Component {
 
 class TestWillUnmount extends Component {
   componentWillUnmount() {
-    Alert.alert("Component unmount!");
+    Alert.alert('Component unmount!');
   }
 
   render() {
     return (
       <View>
         <Text>
-          Hi TestWillUnmount is here!
-          This text will disappear in 3 sec ago.
+          Hi TestWillUnmount is here! This text will disappear in 3 sec ago.
         </Text>
       </View>
     );
